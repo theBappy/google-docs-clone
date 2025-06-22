@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jost } from 'next/font/google'
 import "./globals.css";
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { ConvexClientProvider } from "@/components/convex-client-provider";
 
 const jost = Jost({
   subsets: ['latin']
@@ -23,7 +24,9 @@ export default function RootLayout({
         className={jost.className}
       >
         <NuqsAdapter>
+          <ConvexClientProvider>
           {children}
+          </ConvexClientProvider>
         </NuqsAdapter>
       </body>
     </html>
