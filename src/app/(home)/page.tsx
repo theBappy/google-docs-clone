@@ -7,6 +7,7 @@ import { api } from "../../../convex/_generated/api";
 
 const page = () => {
   const documents = useQuery(api.documents.get)
+  
   if(!documents === undefined){
     return (
       <p>Loading...</p>
