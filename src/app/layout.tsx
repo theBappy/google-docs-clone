@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Jost } from 'next/font/google'
+import { Jost } from "next/font/google";
 import "./globals.css";
-import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ConvexClientProvider } from "@/components/convex-client-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const jost = Jost({
-  subsets: ['latin']
-})
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Google Docs@theBappy",
@@ -20,12 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={jost.className}
-      >
+      <body className={jost.className}>
         <NuqsAdapter>
           <ConvexClientProvider>
-          {children}
+            <Toaster />
+            {children}
           </ConvexClientProvider>
         </NuqsAdapter>
       </body>
