@@ -26,6 +26,7 @@ import {
   ListOrderedIcon,
   ListTodoIcon,
   LucideIcon,
+  MessageCircleIcon,
   MessageSquarePlusIcon,
   MinusIcon,
   PlusIcon,
@@ -610,9 +611,9 @@ export const Toolbar = () => {
     [
       {
         label: "Comment",
-        icon: MessageSquarePlusIcon,
-        onClick: () => console.log("TODO: Comment"),
-        isActive: false, // TODO: Enable this functionality
+        icon: MessageCircleIcon,
+        onClick: () => editor?.chain().focus().addPendingComment().run(),
+        isActive: editor?.isActive('liveblocksCommentMark'), 
       },
       {
         label: "List Todo",

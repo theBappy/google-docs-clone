@@ -1,5 +1,6 @@
 "use client";
 
+import { useUser } from "@clerk/nextjs";
 import { ReactNode } from "react";
 import {
   LiveblocksProvider,
@@ -9,11 +10,13 @@ import {
 import { useParams } from "next/navigation";
 
 export function Room({ children }: { children: ReactNode }) {
-  const params = useParams()  
-  
+  const params = useParams();
+
   return (
-    <LiveblocksProvider publicApiKey={"pk_dev_5Y9wh0qpU6UVXuAOSSFAagOwH2Ja-wFpwN_695UxrUteKOd-e47poXnwtadxAXvM"}>
-      <RoomProvider id={params.documentId as string}>
+    <LiveblocksProvider throttle={16} authEndpoint="/api/liveblocks-auth">
+      <RoomProvider
+        id={params.documentId as string}
+      >
         <ClientSideSuspense fallback={<div>Loading…</div>}>
           {children}
         </ClientSideSuspense>
