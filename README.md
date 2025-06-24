@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   <!-- Convex logo hosted locally -->
-  <img src="/assets/convex-logo.svg" alt="Convex Logo" style="height:28px; margin:0 4px;" />
+  <img src="/assets/convex.webp" alt="Convex logo" width="80" />
   <img src="https://img.shields.io/badge/Liveblocks-5E5DF0?style=for-the-badge&logo=liveblocks&logoColor=white" />
   <img src="https://img.shields.io/badge/Tiptap-8E44AD?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Clerk-3E5FF8?style=for-the-badge" />
@@ -15,7 +15,7 @@
 
 ## 📄 Google Docs Clone
 
-This is a powerful Google Docs inspired collaborative document editor built with **Next.js 15**, **React 19**, **Tailwind CSS**, **Liveblocks**, **Tiptap Editor**, and **Clerk Authentication**. It supports real-time editing, document management, user collaboration, and more.
+This is a powerful Google Docs inspired collaborative document editor built with **Next.js 15**, **React 19**, **Tailwind CSS**, **convex**, **Liveblocks**, **Tiptap Editor**, and **Clerk Authentication**. It supports real-time editing, document management, user collaboration, and more.
 
 Whether you're working solo, with your team, or across your organization — this app allows you to create, edit, and manage documents with a smooth, real-time experience.
 
@@ -88,8 +88,7 @@ Whether you're working solo, with your team, or across your organization — thi
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/google-docs-clone.git
-
+git clone https://github.com/theBappy/google-docs-clone
 # Navigate to the project folder
 cd google-docs-clone
 
