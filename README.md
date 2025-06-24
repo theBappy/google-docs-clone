@@ -8,7 +8,10 @@
   <img src="https://img.shields.io/badge/Liveblocks-5E5DF0?style=for-the-badge&logo=liveblocks&logoColor=white" />
   <img src="https://img.shields.io/badge/Tiptap-8E44AD?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Clerk-3E5FF8?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=zustand&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 </p>
+
 
 
 ---
