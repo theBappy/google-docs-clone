@@ -1,16 +1,26 @@
+import { useMutation, useStorage } from "@liveblocks/react";
 import React, { useRef, useState } from "react";
 import { FaCaretDown } from "react-icons/fa";
+
 
 // Create 83 small ticks (similar to 1/10 inch on an 8.5 inch paper)
 const markers = Array.from({ length: 83 }, (_, i) => i);
 
 export const Ruler = () => {
+  const leftMargin = useStorage((root) => root.leftMargin) ?? 56;
+  const setLeftMargin = useMutation(({storage}, position: number) =>{
+    storage.set('leftMargin', position)
+  },[])
+
+  
+  const rightMargin = useStorage((root) => root.rightMargin) ?? 56;
+  const setRightMargin = useMutation(({storage}, position: number) =>{
+    storage.set('rightMargin', position)
+  },[])
   const pageWidth = 816; // standard width in px (e.g. A4 width)
   const min_space = 100; // minimum space between left and right
   const snapTo = 10; // snap interval in pixels
 
-  const [leftMargin, setLeftMargin] = useState(56);
-  const [rightMargin, setRightMargin] = useState(56);
   const [isDraggingLeft, setIsDraggingLeft] = useState(false);
   const [isDraggingRight, setIsDraggingRight] = useState(false);
 
