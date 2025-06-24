@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Google Docs Clone 🚀
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <!-- Convex logo hosted locally -->
+  <img src="/assets/convex-logo.svg" alt="Convex Logo" style="height:28px; margin:0 4px;" />
+  <img src="https://img.shields.io/badge/Liveblocks-5E5DF0?style=for-the-badge&logo=liveblocks&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tiptap-8E44AD?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Clerk-3E5FF8?style=for-the-badge" />
+</p>
 
-First, run the development server:
+---
+
+## 📄 Google Docs Clone
+
+This is a powerful Google Docs inspired collaborative document editor built with **Next.js 15**, **React 19**, **Tailwind CSS**, **Liveblocks**, **Tiptap Editor**, and **Clerk Authentication**. It supports real-time editing, document management, user collaboration, and more.
+
+Whether you're working solo, with your team, or across your organization — this app allows you to create, edit, and manage documents with a smooth, real-time experience.
+
+---
+
+## ✨ Features
+
+✅ **Document Management**  
+- Create, edit, and delete documents (personal or organizational).  
+- Categorize documents for personal or team use.
+
+✅ **Real-Time Collaboration**  
+- Multiple users can edit the same document simultaneously.  
+- Live cursors and collaborative presence supported via Liveblocks.
+
+✅ **Rich Text Editing**  
+- Built with Tiptap editor supporting text formatting, headings, tables, checklists, links, images, and more.
+
+✅ **User Authentication**  
+- Seamless authentication powered by Clerk (supports personal and organization-based accounts).
+
+✅ **Document Sharing & Invites**  
+- Easily invite others to collaborate on your documents.
+
+✅ **Notifications System**  
+- Get notified when invited to collaborate or when document changes occur.
+
+✅ **Inbox Feature**  
+- Centralized inbox for collaboration invites and activity updates.
+
+✅ **User Profiles**  
+- Manage personal profile details, update avatars, and customize user settings.
+
+✅ **Responsive UI**  
+- Clean, fast, and responsive user interface using Tailwind CSS and Radix UI components.
+
+✅ **Modern Tech Stack**  
+- Optimized performance with Next.js 15 and React 19.  
+- Built with modern React tools and libraries.
+
+✅ **Access Control**  
+- Easily manage document access (edit, view, or remove permissions).
+
+✅ **Version Control**  
+- Real-time updates with proper document state management.
+
+---
+
+## 🚀 Tech Stack
+
+- **Next.js 15**
+- **React 19**
+- **Tailwind CSS**
+- **Liveblocks** (Real-time collaboration)
+- **Tiptap Editor**
+- **Clerk Authentication**
+- **Radix UI**
+- **Zustand** (State Management)
+- **Convex Backend**
+
+---
+
+## 🔧 Getting Started
+
+### Prerequisites
+- Node.js >= 18
+- Yarn or npm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/google-docs-clone.git
+
+# Navigate to the project folder
+cd google-docs-clone
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
