@@ -4,12 +4,12 @@
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <!-- Convex logo hosted locally -->
-  <img src="/assets/convex.webp" alt="Convex logo" width="80" />
+  <img src="https://img.shields.io/badge/Convex-005FCC?style=for-the-badge&logo=convex&logoColor=white" />
   <img src="https://img.shields.io/badge/Liveblocks-5E5DF0?style=for-the-badge&logo=liveblocks&logoColor=white" />
   <img src="https://img.shields.io/badge/Tiptap-8E44AD?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Clerk-3E5FF8?style=for-the-badge" />
 </p>
+
 
 ---
 
