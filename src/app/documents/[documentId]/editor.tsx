@@ -22,13 +22,17 @@ import Link from '@tiptap/extension-link'
 import TextAlign from '@tiptap/extension-text-align'
 import { useLiveblocksExtension } from "@liveblocks/react-tiptap";
 
+
 // custom extension (created for font-size)
 import { FontSizeExtension } from "@/extensions/font-size";
 import { LineHeightExtensions } from "@/extensions/line-height";
 import { Ruler } from "./Ruler";
 import { Threads } from "./threads";
+import { useStorage } from "@liveblocks/react";
 
 export const Editor = () => {
+  const leftMargin = useStorage((root) => root.leftMargin)
+  const rightMargin = useStorage((root) => root.rightMargin)
   const liveblocks = useLiveblocksExtension()
   const { setEditor } = useEditorStore()  
   const editor = useEditor({
@@ -59,7 +63,7 @@ export const Editor = () => {
     },
     editorProps: {
       attributes: {
-        style: "padding-left: 56px; padding-right: 56px;",
+        style: `padding-left: ${leftMargin ?? 56}px; padding-right: ${rightMargin ?? 56}px;`,
         class:
           "focus:outline-none print:border-0 bg-white border border-[#c7c7c7] flex flex-col min-h-[1054px] w-[816px] pt-10 pb-10 pr-14 cursor-text",
       },
