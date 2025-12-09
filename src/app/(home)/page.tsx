@@ -5,10 +5,10 @@ import { Navbar } from "./navbar";
 import { TemplateGallery } from "./template-gallery";
 import { api } from "../../../convex/_generated/api";
 import { DocumentsTable } from "./documents-table";
-import { useSearchParam } from "@/hooks/use-search-params";
+import { useSearchParams } from "@/hooks/use-search-params";
 
-const page = () => {
-  const [search] = useSearchParam()
+const Page = () => {
+  const [search] = useSearchParams()
   const { results, status, loadMore } = usePaginatedQuery(
     api.documents.get,
     { search },
@@ -32,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -1,6 +1,6 @@
 import {parseAsString, useQueryState} from 'nuqs'
 
-export function useSearchParam() {
+export function useSearchParams() {
     return useQueryState(
         'search',
         parseAsString.withDefault('').withOptions({
